@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Для тебя 💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="hearts-container" id="heartsContainer"></div>
+
+  <main class="app">
+
+    <section class="screen active" id="introScreen">
+      <div class="card intro-card">
+        <div class="big-heart">💗</div>
+        <h1 class="title">С Днём Рождения, любимая!</h1>
+        <p class="subtitle">
+          Я подготовил для тебя маленький квест.<br>
+          Ответь на все вопросы — и в конце тебя ждёт сюрприз 🎁
+        </p>
+        <button class="btn start-btn" id="startBtn">Начать квест</button>
+      </div>
+    </section>
+
+    <section class="screen" id="quizScreen">
+      <div class="card quiz-card">
+        <div class="progress-wrap">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <p class="progress-text" id="progressText">Вопрос 1 из 7</p>
+        <h2 class="question" id="question"></h2>
+        <div class="options" id="options"></div>
+        <div class="jump-area" id="jumpArea"></div>
+
+      </div>
+    </section>
+
+    <section class="screen" id="congratScreen">
+      <div class="card congrat-card">
+        <div class="big-heart">💖</div>
+        <h1 class="title">С Днём Рождения!</h1>
+        <p class="congrat-text">
+          Я хочу сказать тебе, как сильно я тебя люблю.<br><br>
+          Ты — мой самый яркий свет, моя главная поддержка и моё счастье.<br>
+          Каждый день рядом с тобой — это подарок для меня сам по себе.<br><br>
+          Пусть в этом году сбываются все твои мечты,<br>
+          а я постараюсь сделать так, чтобы каждое утро<br>
+          начиналось с улыбки и ощущения, что ты любима.<br><br>
+          Счастлив, что ты у меня есть.<br><br>
+          С Днём Рождения, моя дорогая 💕
+        </p>
+        <button class="btn gift-btn" id="giftBtn">Получить подарок 🎁</button>
+      </div>
+    </section>
+
+    <section class="screen" id="finishScreen">
+      <div class="card gift-card">
+        <img src="img.png" alt="Подарок" class="gift-image-img">
+        <h1 class="title">Поездка в Турцию!</h1>
+        <p class="subtitle">
+          Обещаю тебе, что в конце этой осени мы с тобой поедем в отпуск в Турцию!<br> PS. Если ты возьмешь меня с собой, конечно
+        </p>
+        <p class="gift-note">С любовью, твой Повелитель 💗</p>
+        <div class="video-gift-wrap">
+          <a href="#" id="videoGiftLink" class="video-gift-link" target="_blank" title="Видео-поздравление">🎁</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="video-modal" id="videoModal">
+    <div class="video-modal-inner">
+      <video id="giftVideo" class="video-modal-player" controls playsinline>
+        <source src="видео.webm" type="video/webm">
+      </video>
+      <button class="btn video-close-btn" id="videoCloseBtn">Закрыть 💗</button>
+    </div>
+  </div>
+
+  </main>
+
+  <div class="intermission" id="intermissionScreen">
+    <div class="intermission-card">
+      <div class="big-heart">😏</div>
+      <h2 class="intermission-title">Слишком легко?</h2>
+      <p class="intermission-text">Тогда теперь вопросы посложнее</p>
+    </div>
+  </div>
+
+  <div class="intermission" id="intermission2Screen">
+    <div class="intermission-card">
+      <div class="big-heart">😁</div>
+      <h2 class="intermission-title">Ну лаааадно</h2>
+      <p class="intermission-text">Попробуй ещё разок</p>
+    </div>
+  </div>
+
+<div class="intermission" id="intermission3Screen">
+    <div class="intermission-card">
+      <div class="big-heart">🫵</div>
+      <h2 class="intermission-title">Готова?</h2>
+      <p class="intermission-text">Теперь самый сложный вопрос</p>
+    </div>
+  </div>
+
+  <div class="intermission" id="kissScreen">
+    <div class="intermission-card">
+      <div class="big-heart">😘</div>
+      <h2 class="intermission-title">Ага, думала, всё так просто!</h2>
+      <p class="intermission-text">Сначала поцелуй своего любимого мальчика</p>
+      <button class="btn modal-btn" id="kissBtn1">Поцеловала 😚</button>
+    </div>
+  </div>
+
+  <div class="intermission" id="kiss2Screen">
+    <div class="intermission-card">
+      <div class="big-heart">🤨</div>
+      <h2 class="intermission-title">Как-то неискренне...</h2>
+      <p class="intermission-text">Ну-ка ещё разок, по-настоящему</p>
+      <button class="btn modal-btn" id="kissBtn2">Поцеловала 😚</button>
+    </div>
+  </div>
+  </div>
+
+  <div class="toast-wrap" id="toastWrap"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
